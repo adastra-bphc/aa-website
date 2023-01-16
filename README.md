@@ -4,4 +4,4 @@ Ad Astra is the Space & Astronomy Club of BITS Pilani, Hyderabad Campus
 
 Updates-
 
-Note-
+Note- 
