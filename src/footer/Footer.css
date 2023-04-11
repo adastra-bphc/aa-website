@@ -1,0 +1,45 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__sub-heading {
+    margin-top: 0;
+    color: #f7efa8;
+}
+
+.contact-us {
+    margin-right: 10rem;
+}
+
+.sitelinks {
+    margin-right: 10rem;
+}
+
+.contact {
+    margin: 0;
+}
+
+.link {
+    margin: 0 0.4rem;
+    text-decoration: none;
+}
+
+.home_link {
+    margin-left: 0;
+}
+
+.facebook {
+    margin-left: 0;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: inherit;
+}

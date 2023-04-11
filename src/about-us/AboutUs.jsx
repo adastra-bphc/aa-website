@@ -37,9 +37,9 @@ function AboutUs() {
                     <div className="about-us__leads">
                         {members.slice(3, 8).map(member => (
                             <div key={member.id}>
-                                <img src={member.photo} alt={member.name} />
-                                <p>{member.name}</p>
-                                <p>{member.position}</p>
+                                <img className="about-us__member__photo" src={member.photo} alt={member.name} />
+                                <p className="about-us__member__name">{member.name}</p>
+                                <p className="about-us__member__position">{member.position}</p>
                             </div>
                         ))}
                     </div>
