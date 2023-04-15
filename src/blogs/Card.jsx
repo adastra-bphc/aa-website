@@ -1,36 +1,31 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
+// import 'bootstrap/dist/css/bootstrap.min.css'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 export default function BlogCard(props) {
 
-  const {title, blurb, image, image_alt, id, handleClick} = props;
+  const {title, blurb, image, authors, image_alt, id} = props;
+
+  const handleClick = () => {
+    alert("Navigate to blog page");
+  }
 
   return (
-    
-      <Card sx={{ maxWidth: 250, boxShawdow: 5 }}>
-        <ButtonBase onClick={() => {handleClick(id)}}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="300"
-              image={image}
-              alt={image_alt}
-              width="100%"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {title}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {blurb}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </ButtonBase>
-      </Card>
-    
+    <div>
+    <Card style={{ width: '18rem' }} className='mt-3'>
+      <Card.Img variant="top" src={image} />
+      <Card.Body>
+        <Card.Title>{title}</Card.Title>
+        <Card.Text>
+          {blurb}
+        </Card.Text>
+        <Card.Text>
+          Author(s): {authors.join(', ')}
+        </Card.Text>
+        <Button variant="primary" onClick={handleClick}>Read</Button>
+      </Card.Body>
+    </Card>
+    </div>
   );
 }
