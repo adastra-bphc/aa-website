@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 // import axios from 'axios';
 // import requests from './request';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -33,9 +34,9 @@ function Footer() {
             <div className="sitelinks">
                 <p className="footer__sub-heading sitelinks__heading">Site Links</p>
                 <div className="sitelinks__body">
-                    <a href="#" className="link home_link">Home</a>|
-                    <a href="#" className="link about-us_link">About Us</a>|
-                    <a href="#" className="link blogs_link">Blogs</a>
+                    <Link to="/" className="link home_link">Home</Link>|
+                    <Link to="/about-us" className="link about-us_link">About Us</Link>|
+                    <Link to="/blogs" className="link blogs_link">Blogs</Link>
                 </div>
             </div>
             <div className="follow-us">
