@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-
 import Home from './home/Home';
 import AboutUs from './about-us/AboutUs';
 import Blogs from './blogs/Blogs';
@@ -12,7 +10,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
   return (
-    <>
+    <div className="App">
       <BrowserRouter>
         <NavBar />
 
@@ -21,12 +19,12 @@ function App() {
           <Route exact path="/about-us" element={<AboutUs />} />
           <Route exact path="/blogs" element={<Blogs />} />
           {/* <Route exact path="/blogs/:id" element={<SingleBlog />} /> */}
-          <Route path="*" element={ <Navigate to="/" /> } />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
 
         <Footer />
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
