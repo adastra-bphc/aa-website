@@ -1,26 +1,39 @@
 import React, { useState, useEffect } from 'react';
+import { db } from '../firebase/firebase';
+import { doc, getDoc, collection } from 'firebase/firestore';
 import { Link } from 'react-router-dom';
-// import axios from 'axios';
-// import requests from './request';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import './Footer.css';
 
 function Footer() {
-    const phone = "+91 9494000841";
-    const email = "adastra@hyderabad.bits-pilani.ac.in";
-    // const [phone, setPhone] = useState([]);
-    // const [email, setEmail] = useState([]);
+    const [phone, setPhone] = useState([]);
+    const [email, setEmail] = useState([]);
+    const [facebook, setFacebook] = useState([]);
+    const [instagram, setInstagram] = useState([]);
 
-    // useEffect(() => {
-    //     axios.get(requests.fetchPhone)
-    //         .then(response => setPhone(response.data))
-    //         .catch(error => console.error(error))
-    //     axios.get(requests.fetchEmail)
-    //         .then(response => setEmail(response.data))
-    //         .catch(error => console.error(error))
-    // })
+    const contactDataRef = doc(db, 'Footer', 'contact-us');
+    const followDataRef = doc(db, 'Footer', 'follow-us');
+
+    useEffect(() => {
+        const getInformation = async () => {
+            try {
+                const contact_data = (await getDoc(contactDataRef)).data();
+                const follow_data = (await getDoc(followDataRef)).data();
+                setPhone(contact_data.phone);
+                setEmail(contact_data.email);
+                setFacebook(follow_data.facebook);
+                setInstagram(follow_data.instagram);
+            }
+            catch (err) {
+                console.error(err);
+            }
+        };
+
+        getInformation();
+
+    }, []);
 
     return (
         <div className="footer">
@@ -42,8 +55,8 @@ function Footer() {
             <div className="follow-us">
                 <p className="footer__sub-heading follow-us__heading">Follow Us</p>
                 <div className="follow-us__body">
-                    <a href="#" className="link facebook"><FontAwesomeIcon icon={faFacebook} /></a>
-                    <a href="#" className="link instagram"><FontAwesomeIcon icon={faInstagram} /></a>
+                    <a href={facebook} className="link facebook"><FontAwesomeIcon icon={faFacebook} /></a>
+                    <a href={instagram} className="link instagram"><FontAwesomeIcon icon={faInstagram} /></a>
                 </div>
             </div>
         </div>
