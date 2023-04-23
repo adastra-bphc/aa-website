@@ -1,21 +1,33 @@
-import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+import Home from './home/Home';
+import AboutUs from './about-us/AboutUs';
+import Blogs from './blogs/Blogs';
+import SingleBlog from './single-blog/SingleBlog';
+import NavBar from './navbar/NavBar'
+import Footer from './footer/Footer'
+
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+
+function App() {
+  return (
+    <>
+      <BrowserRouter>
+        <NavBar />
+
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about-us" element={<AboutUs />} />
+          <Route exact path="/blogs" element={<Blogs />} />
+          {/* <Route exact path="/blogs/:id" element={<SingleBlog />} /> */}
+          <Route path="*" element={ <Navigate to="/" /> } />
+        </Routes>
+
+        <Footer />
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App;

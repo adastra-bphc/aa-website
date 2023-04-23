@@ -1,23 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import requests from './request';
+// import axios from 'axios';
+// import requests from './request';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import './Footer.css';
 
 function Footer() {
-    const [phone, setPhone] = useState([]);
-    const [email, setEmail] = useState([]);
+    const phone = "+91 9494000841";
+    const email = "adastra@hyderabad.bits-pilani.ac.in";
+    // const [phone, setPhone] = useState([]);
+    // const [email, setEmail] = useState([]);
 
-    useEffect(() => {
-        axios.get(requests.fetchPhone)
-            .then(response => setPhone(response.data))
-            .catch(error => console.error(error))
-        axios.get(requests.fetchEmail)
-            .then(response => setEmail(response.data))
-            .catch(error => console.error(error))
-    })
+    // useEffect(() => {
+    //     axios.get(requests.fetchPhone)
+    //         .then(response => setPhone(response.data))
+    //         .catch(error => console.error(error))
+    //     axios.get(requests.fetchEmail)
+    //         .then(response => setEmail(response.data))
+    //         .catch(error => console.error(error))
+    // })
 
     return (
         <div className="footer">
