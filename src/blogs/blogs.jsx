@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card"
+import BlogCard from "../components/BlogCard";
 
 export default function Blogs(props){
     
@@ -11,7 +11,7 @@ export default function Blogs(props){
     function getCards(count){
         let cards = [];
         for (let val = 0; val < count;  val++) {
-            const component = (<Card 
+            const component = (<BlogCard 
                 title={`Title ${val}`}
                 blurb={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
                 authors={["Author 1", "Author 2"]}
