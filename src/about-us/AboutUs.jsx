@@ -42,7 +42,7 @@ function AboutUs() {
 
     return (
         <div className="about-us">
-            <h1 className="about-us__heading">ABOUT US</h1>
+            <h1 className="about-us__heading page-heading">ABOUT US</h1>
             <div className="about-us__content">
                 <div className="about-us__members">
                     <div className="about-us__pors">

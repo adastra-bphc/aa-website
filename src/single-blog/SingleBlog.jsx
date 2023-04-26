@@ -71,9 +71,6 @@ function SingleBlog() {
     // console.log(currentIndex);
   };
 
-  // const markup = { __html: posts[currentIndex].Content };
-
-
   return (
     <div className="blog-page">
       {/* <div className="blog-heading"><h1 className="blog_h1">BLOGS</h1></div> */}
