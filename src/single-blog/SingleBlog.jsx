@@ -68,11 +68,7 @@ function SingleBlog() {
     const isLastPost = currentIndex === posts.length - 1;
     const newIndex = isLastPost ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-    // console.log(currentIndex);
   };
-
-  // const markup = { __html: posts[currentIndex].Content };
-
 
   return (
     <div className="blog-page">

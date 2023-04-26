@@ -5,13 +5,6 @@
     font-family: 'Browser Serif';
 }
 
-.about-us__heading {
-    margin: 0 auto 2.5rem;
-    padding-top: 2.5rem;
-    font-size: 4.2rem;
-    color: #f7efa8;
-}
-
 .about-us__members {
     margin-bottom: 7rem;
 }
@@ -50,6 +43,7 @@
 .about-us__team__heading {
     margin: 0 auto 2.5rem;
     font-size: 3.2rem;
+    font-weight: bold;
 }
 
 .about-us__team-photo {
