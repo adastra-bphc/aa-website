@@ -1,8 +1,7 @@
-.blog-page{
+.blog-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
     color: white;
 }
 
@@ -37,6 +36,7 @@ body {
 .cover-image {
     width: 100%;
     height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Style for posted date div */
@@ -165,10 +165,11 @@ figcaption {
     text-align: center;
 }
 
-.navbar{
+.navbar {
     color: aliceblue;
 }
-.blog-navigate{
+
+.blog-navigate {
     width: 100%;
     display: flex;
     font-size: 20px;
@@ -176,36 +177,39 @@ figcaption {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 /* .dummy{
     display: flex;
     justify-content: space-between;
 } */
-.blog-heading{
+.blog-heading {
     color: wheat;
     margin: 20px;
 }
 
-.blog_h1{
+.blog_h1 {
     font-size: 30px;
 }
 
-.blog-prev{
+.blog-prev {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
-.blog-next{
+
+.blog-next {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
-.blog-card{
+
+.blog-card {
     width: 70vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.404);
-    
+    background-color: rgba(0, 0, 0, 0.7);
+
 }
