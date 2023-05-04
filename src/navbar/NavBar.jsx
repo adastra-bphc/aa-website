@@ -22,12 +22,12 @@ export default function NavBar() {
                         <li className="nav-item list-item">
                             <Link to="/blogs" className="nav-link active text-white">Blogs</Link>
                         </li>
-                        {/* <li className="nav-item list-item">
-          <a className="nav-link active text-white" href="#">Photography</a>
-        </li>
-        <li className="nav-item list-item">
-          <a className="nav-link active text-white" href="#">Spaced Out</a>
-        </li> */}
+                        <li className="nav-item list-item">
+                            <a className="nav-link active text-white" href="#">Astrophotography</a>
+                        </li>
+                        <li className="nav-item list-item">
+                            <a className="nav-link active text-white" href="#">Spaced Out</a>
+                        </li>
                     </ul>
                 </div>
             </div>

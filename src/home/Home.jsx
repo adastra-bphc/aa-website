@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
 // import requests from './request';
 import './Home.css'
-import aaron from './aaron-burden-6jYoil2GhVk-unsplash.jpg'
-import chi from './chirayu-trivedi-iDTDvSDEVjw-unsplash.jpg'
-import cri from './chris-ried-ieic5Tq8YMk-unsplash.jpg'
+import aaron from './stargazing.jpg'
+import chi from './zathura.jpg'
+import cri from './exoplanet.jpg'
 
 function Home() {
     let column = {
@@ -35,8 +35,8 @@ function Home() {
                         <div class="card bg-dark text-white" style={imgstyle}>
                             <img src={aaron} class="card-img-top" alt="..." />
                             <div class="card-body">
-                                <h5 class="card-title">DATA1</h5>
-                                <p class="card-text">...........................</p>
+                                <h5 class="card-title">STARGAZING</h5>
+                                <p class="card-text">For the Love of Astronomy\n</p>
                                 <a href="#" class="btn btn-dark text-white">Go</a>
                             </div>
                         </div>
@@ -45,8 +45,8 @@ function Home() {
                         <div class="card bg-dark text-white" style={imgstyle}>
                             <img src={chi} class="card-img-top" alt="..." />
                             <div class="card-body">
-                                <h5 class="card-title">DATA2</h5>
-                                <p class="card-text">............................</p>
+                                <h5 class="card-title">ZATHURA</h5>
+                                <p class="card-text">A Space Adventure</p>
                                 <a href="#" class="btn btn-dark text-while">Go</a>
                             </div>
                         </div>
@@ -55,8 +55,8 @@ function Home() {
                         <div class="card bg-dark text-white" style={imgstyle}>
                             <img src={cri} class="card-img-top" alt="..." />
                             <div class="card-body">
-                                <h5 class="card-title">DATA3</h5>
-                                <p class="card-text">.............................</p>
+                                <h5 class="card-title">EXOPLANET WORKSHOP</h5>
+                                <p class="card-text">Finding, Classifying & Analysing Exoplanets using AI/ML</p>
                                 <a href="#" class="btn btn-dark text-whit">Go</a>
                             </div>
                         </div>

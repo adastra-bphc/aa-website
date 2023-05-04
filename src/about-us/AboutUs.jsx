@@ -65,7 +65,7 @@ function AboutUs() {
                     </div>
                 </div>
                 <div className="about-us__team">
-                    <h2 className="about-us__team__heading">The Team</h2>
+                    <h2 className="about-us__team__heading">Team Ad Astra</h2>
                     <div className="about-us__team__content">
                         <img className="about-us__team-photo" src={teamPhoto} alt="Team Photo" />
                         <p className="about-us__team-text">{teamText}</p>
