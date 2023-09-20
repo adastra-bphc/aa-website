@@ -7,6 +7,9 @@ import NavBar from './navbar/NavBar'
 import Footer from './footer/Footer'
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { inject } from '@vercel/analytics';
+ 
+inject();
 
 function App() {
   return (
