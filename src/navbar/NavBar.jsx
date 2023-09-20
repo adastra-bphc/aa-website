@@ -7,7 +7,7 @@ export default function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg bg-dark bg-body-tertiary text-white">
             <div className="container-fluid">
-                <img src={logo} alt="..." className="listimg-item" />
+                <img src={logo} alt="ad astra logo" Link to="/home" className="listimg-item" />
                 <button className="navbar-toggler text-white " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

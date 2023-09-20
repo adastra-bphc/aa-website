@@ -26,13 +26,8 @@ body {
     opacity: 1;
 }
 
-.listimg-item {
-    padding-right: 1135px;
-    opacity: 1;
-}
-
 .navbar img {
-    margin-right: -630px;
+    padding-right: 800px;
     height: 3em;
     border-radius: 10%;
     opacity: 1;
