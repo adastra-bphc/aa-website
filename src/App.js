@@ -1,33 +1,17 @@
-import './App.css';
-import Home from './home/Home';
-import AboutUs from './about-us/AboutUs';
-import Blogs from './blogs/Blogs';
-import SingleBlog from './single-blog/SingleBlog';
-import NavBar from './navbar/NavBar'
-import Footer from './footer/Footer'
+import React from 'react'
+import { Routes, Route } from 'react-router-dom';
 
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { inject } from '@vercel/analytics';
- 
-inject();
+import Home from './routes/Home';
+import About from './routes/About';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <NavBar />
-
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about-us" element={<AboutUs />} />
-          <Route exact path="/blogs" element={<Blogs />} />
-          <Route exact path="/blogs/:id" element={<SingleBlog />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-
-        <Footer />
-      </BrowserRouter>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutus" element={<About />} />
+      </Routes>
+    </>
   );
 }
 
