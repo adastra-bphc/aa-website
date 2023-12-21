@@ -5,9 +5,5 @@ This repo contains the code for the Ad Astra Website
 
 ## Developed By-
 
-[Abhinav](https://github.com/Abhiinv)  
-[Ritvik](https://github.com/Code-R57)  
-[Dhruv Merchant](https://github.com/DhruvMerchant)  
-[Mokshith Thakkilapati](https://github.com/mokshith002)  
-[Pritam Reddy](https://github.com/PritamReddy101)  
+[Tanay Garde](https://github.com/sighwalker)  
 [Neil Gudwala](https://github.com/neilgudwala)  

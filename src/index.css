@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3, h4, h5, p, a{
+  color: #FEFEFE;
+}
+
+body {
+  margin: 0;
+  font-family: 'Play', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: #141414;
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn{
+  padding: 12px 32px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #FEFEFE;
+  border: 1px solid #FEFEFE;
+  cursor: pointer;
+}
+
+.btn-light{
+  background: rgba(255, 255, 255, .2);
+}
+
+.btn:hover{
+  background: rgba(255, 255, 255, .2);
+}
