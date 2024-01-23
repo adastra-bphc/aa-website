@@ -7,15 +7,15 @@ const About = () => {
     <div className='about'>
         <div className='card-container'>
             <div className='card'>
-                <h3>Secretary</h3>
-                <span className='bar'></span>
-                <p className='name'>Divyansh Gangwar</p>
-                <Link to='/contact' className='btn'>Contact</Link>
-            </div>
-            <div className='card'>
                 <h3>President</h3>
                 <span className='bar'></span>
                 <p className='name'>Atreyi Dasgupta</p>
+                <Link to='/contact' className='btn'>Contact</Link>
+            </div>
+            <div className='card'>
+                <h3>Secretary</h3>
+                <span className='bar'></span>
+                <p className='name'>Divyansh Gangwar</p>
                 <Link to='/contact' className='btn'>Contact</Link>
             </div>
             <div className='card'>
